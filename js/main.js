@@ -20,15 +20,3 @@ if (navToggle && mainNav) {
 // Año en el footer
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-// Formulario de contacto (placeholder: aún no está conectado a un backend)
-const contactForm = document.getElementById('contactForm');
-const formNote = document.getElementById('formNote');
-
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    formNote.textContent = '¡Gracias! Hemos recibido tu mensaje y te contactaremos muy pronto.';
-    contactForm.reset();
-  });
-}
