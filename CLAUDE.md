@@ -2,7 +2,7 @@
 
 ## RESTRICCIÓN OBLIGATORIA — NO TOCAR SIN PEDIRLO EXPLÍCITAMENTE
 
-- **Paleta de colores de marca**: azul `#1F5FA8`, verde `#8DC63F`, rojo `#ED1C24`
+- **Paleta de colores de marca**: Azul Institucional `#1B5FAA`, Verde Vitalidad `#5C9E2E`, Rojo Energía `#C0392B`
 - **Tipografía ya establecida** (Fredoka/Nunito)
 - **El logo y su tratamiento actual**
 - **Contenido real ya cargado** (horarios, contacto, testimonios, fotos, video)

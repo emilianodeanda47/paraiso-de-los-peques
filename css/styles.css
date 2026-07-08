@@ -1,16 +1,18 @@
 /* =========================================================
    El Paraíso de los Peques — estilos
-   Paleta: azul #1F5FA8, verde #8DC63F, rojo #ED1C24
+   Paleta oficial: Azul Institucional #1B5FAA, Verde Vitalidad #5C9E2E, Rojo Energía #C0392B
    ========================================================= */
 
 :root {
-  --azul: #1F5FA8;
-  --azul-oscuro: #154173;
-  --azul-suave: #EAF2FB;
-  --verde: #8DC63F;
-  --verde-suave: #F0F9E4;
-  --rojo: #ED1C24;
-  --rojo-oscuro: #C4141B;
+  --azul: #1B5FAA;
+  --azul-oscuro: #124174;
+  --azul-suave: #ECF1F8;
+  --verde: #5C9E2E;
+  --verde-suave: #EBF3E5;
+  --verde-oscuro: #3D681E;
+  --rojo: #C0392B;
+  --rojo-oscuro: #922B21;
+  --rojo-suave: #FAEFEE;
   --blanco: #FFFFFF;
   --gris-claro: #F7F8FA;
   --gris-texto: #4A5568;
@@ -22,8 +24,8 @@
   --radius-sm: 12px;
   --radius-md: 20px;
   --radius-lg: 32px;
-  --shadow-sm: 0 4px 14px rgba(31, 95, 168, 0.08);
-  --shadow-md: 0 10px 30px rgba(31, 95, 168, 0.14);
+  --shadow-sm: 0 4px 14px rgba(27, 95, 170, 0.08);
+  --shadow-md: 0 10px 30px rgba(27, 95, 170, 0.14);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -91,7 +93,7 @@ ul { list-style: none; }
 .btn-primary {
   background: var(--rojo);
   color: var(--blanco);
-  box-shadow: 0 8px 20px rgba(237, 28, 36, 0.35);
+  box-shadow: 0 8px 20px rgba(192, 57, 43, 0.35);
 }
 .btn-primary:hover { background: var(--rojo-oscuro); }
 
@@ -116,8 +118,8 @@ ul { list-style: none; }
   margin-bottom: 14px;
 }
 .tag-blue { background: var(--azul-suave); color: var(--azul); }
-.tag-green { background: var(--verde-suave); color: #5c8a1f; }
-.tag-red { background: #FDE9EA; color: var(--rojo); }
+.tag-green { background: var(--verde-suave); color: var(--verde-oscuro); }
+.tag-red { background: var(--rojo-suave); color: var(--rojo); }
 
 .section-head {
   max-width: 640px;
@@ -126,6 +128,13 @@ ul { list-style: none; }
 }
 .section-head h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); margin-bottom: 12px; }
 .section-head p { font-size: 1.05rem; }
+.section-motto {
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: var(--verde-oscuro);
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
 
 .section { padding: 80px 0; }
 .section-alt { background: var(--gris-claro); }
@@ -303,7 +312,7 @@ ul { list-style: none; }
 }
 .mv-card h3 { color: var(--blanco); font-size: 1.4rem; margin-bottom: 12px; }
 .mv-blue { background: linear-gradient(135deg, var(--azul), var(--azul-oscuro)); }
-.mv-green { background: linear-gradient(135deg, var(--verde), #6ba62b); }
+.mv-green { background: linear-gradient(135deg, var(--verde), #4A7E25); }
 
 .features-grid {
   display: grid;
@@ -333,6 +342,13 @@ ul { list-style: none; }
 }
 .icon-blue { background: var(--azul-suave); }
 .icon-green { background: var(--verde-suave); }
+.icon-red { background: var(--rojo-suave); }
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
 
 .feature-card h4 { font-size: 1.05rem; margin-bottom: 8px; }
 .feature-card p { font-size: 0.95rem; }
@@ -382,8 +398,8 @@ ul { list-style: none; }
   border-radius: 999px;
   margin-bottom: 14px;
 }
-.program-green .program-time { color: #5c8a1f; background: var(--verde-suave); }
-.program-red .program-time { color: var(--rojo); background: #FDE9EA; }
+.program-green .program-time { color: var(--verde-oscuro); background: var(--verde-suave); }
+.program-red .program-time { color: var(--rojo); background: var(--rojo-suave); }
 
 .program-card h3 { font-size: 1.3rem; margin-bottom: 10px; }
 .program-card p { font-size: 0.95rem; }
@@ -404,7 +420,7 @@ ul { list-style: none; }
 .extended-hours-note span:first-child {
   font-family: var(--font-heading);
   font-weight: 600;
-  color: #5c8a1f;
+  color: var(--verde-oscuro);
 }
 
 /* ---------- Academias ---------- */
@@ -450,7 +466,7 @@ ul { list-style: none; }
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--rojo);
-  background: #FDE9EA;
+  background: var(--rojo-suave);
   padding: 4px 14px;
   border-radius: 999px;
 }
@@ -486,7 +502,7 @@ ul { list-style: none; }
   right: 0;
   bottom: 0;
   padding: 14px 16px;
-  background: linear-gradient(0deg, rgba(21,65,115,0.85), rgba(21,65,115,0));
+  background: linear-gradient(0deg, rgba(18,65,116,0.85), rgba(18,65,116,0));
   color: var(--blanco);
   font-family: var(--font-heading);
   font-weight: 500;
@@ -795,6 +811,7 @@ ul { list-style: none; }
   .academias-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .testimonials-grid { grid-template-columns: minmax(0, 1fr); }
+  .values-grid { grid-template-columns: minmax(0, 1fr); }
   .info-grid { grid-template-columns: minmax(0, 1fr); }
   .contact-grid { grid-template-columns: minmax(0, 1fr); }
   .footer-inner { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
