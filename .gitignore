@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Videos sin usar en el sitio (pesados, no referenciados en index.html)
+assets/galeria/*.mov
